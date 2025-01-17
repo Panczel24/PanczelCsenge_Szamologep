@@ -36,6 +36,9 @@ namespace szamolo
 				case "-":
 					Kivonas();
 					break;
+				case "/":
+					Osztas();
+					break;
 			}
 		}
 
@@ -49,6 +52,12 @@ namespace szamolo
 		{
 			float kivonva = elsoszam - masodikszam;
 			Console.WriteLine("A két szám különbsége:" + kivonva);
+		}
+
+		static void Osztas()
+		{
+			float osztva = elsoszam / masodikszam;
+			Console.WriteLine("A két szám osztva egymással:" + osztva);
 		}
 	}
 }
