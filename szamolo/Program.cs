@@ -39,6 +39,9 @@ namespace szamolo
 				case "/":
 					Osztas();
 					break;
+				case "*":
+					Szorzas();
+					break;
 			}
 		}
 
@@ -58,6 +61,12 @@ namespace szamolo
 		{
 			float osztva = elsoszam / masodikszam;
 			Console.WriteLine("A két szám osztva egymással:" + osztva);
+		}
+
+		static void Szorzas()
+		{
+			float szorozva = elsoszam * masodikszam;
+			Console.WriteLine("A két szám szorozva egymással:" + szorozva);
 		}
 	}
 }
