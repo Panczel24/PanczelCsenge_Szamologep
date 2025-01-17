@@ -42,6 +42,9 @@ namespace szamolo
 				case "*":
 					Szorzas();
 					break;
+				case "%":
+					Szazalek();
+					break;
 			}
 		}
 
@@ -67,6 +70,12 @@ namespace szamolo
 		{
 			float szorozva = elsoszam * masodikszam;
 			Console.WriteLine("A két szám szorozva egymással:" + szorozva);
+		}
+
+		static void Szazalek()
+		{
+			float szazalek = (elsoszam / masodikszam) * 100;
+			Console.WriteLine("Ennyi százaléka az első szam a másodiknak:" + szazalek);
 		}
 	}
 }
