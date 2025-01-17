@@ -33,13 +33,22 @@ namespace szamolo
 					case "+":
 						Osszeadas();
 						break;
-				}
+				case "-":
+					Kivonas();
+					break;
+			}
 		}
 
 		static void Osszeadas()
 		{
 			float osszeadva = elsoszam + masodikszam;
 			Console.WriteLine("A két szám össszege:" + osszeadva);
+		}
+
+		static void Kivonas()
+		{
+			float kivonva = elsoszam - masodikszam;
+			Console.WriteLine("A két szám különbsége:" + kivonva);
 		}
 	}
 }
