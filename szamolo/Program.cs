@@ -21,11 +21,11 @@ namespace szamolo
 
 		static void Indit()
 		{
-				Console.WriteLine("add meg az első számot");
+				Console.Write("add meg az első számot:   ");
 				elsoszam = Convert.ToInt32(Console.ReadLine());
-				Console.WriteLine("add meg a második számot");
+				Console.Write("add meg a második számot:   ");
 				masodikszam = Convert.ToInt32(Console.ReadLine());
-				Console.WriteLine("add meg a műveleti jelet");
+				Console.Write("add meg a műveleti jelet, összeadás:+, kivonás:-, osztás:/, szorzás:*, százalék:%    :     ");
 				jelek = Console.ReadLine();
 
 				switch (jelek)
